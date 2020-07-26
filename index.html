@@ -14,9 +14,36 @@
             loading-screen="enabled: false;"
             arjs="sourceType: webcam; debugUIEnabled: false;"
         >
-            <a-assets>
+                <a-image
+                    src="assets/asset.jpeg "
+					WIDTH="3"
+					HEIGHT="3"
+                    look-at="[gps-camera]"
+                    scale="1 1 1"
+                    gps-entity-place="latitude: 22.44902; longitude: 114.168583;"
+                ></a-image>
+                <a-image
+                    src="assets/asset2.jpg "
+                    WIDTH="3"
+					HEIGHT="3"
+					look-at="[gps-camera]"
+                    scale="1 1 1"
+                    gps-entity-place="latitude: 22.44903; longitude: 114.16849;"
+                ></a-image>
+				
+				 <a-image
+                    src="assets/46.jpg "
+                    WIDTH="3"
+					HEIGHT="3"
+					look-at="[gps-camera]"
+                    scale="1 1 1"
+                    gps-entity-place="latitude: 22.44896; longitude: 114.16855;"
+                ></a-image>
+				
+				
+<a-assets>
                 <video
-                    src="assets/asset.mp4"
+                    src="assets/asset4.mp4"
                     preload="auto"
                     id="vid"
                     response-type="arraybuffer"
@@ -24,14 +51,15 @@
                     crossorigin
                     webkit-playsinline
                     autoplay
-                    muted
                     playsinline
                 ></video>
             </a-assets>
 
                 <a-video
                     src="#vid"
-                    position='0 0.1 0'
+					WIDTH="4"
+					HEIGHT="4"
+                    position='0 0.5 0'
                     rotation="-90 0 0"
                     look-at="[gps-camera]"
                     videohandler
@@ -41,9 +69,9 @@
                     smoothThreshold="5"
                     autoplay="false"
                     scale="1 1 1"
-                    gps-entity-place="latitude: 22.448848559681892; longitude: -245.83130330778664;"
+                    gps-entity-place="latitude: 22.43; longitude: 114.18;"
                 ></a-video>
-
+                
             <a-camera gps-camera rotation-reader></a-camera>
         </a-scene>
     </body>
